@@ -1,0 +1,86 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|d:\\training classes 2023\\asp.net mvc5\\.net mvc project\\sampleprojectposttitle\\sampleprojectposttitle\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|solutionrelative:sampleprojectposttitle\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\sampleprojectposttitle\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|solutionrelative:sampleprojectposttitle\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\sampleprojectposttitle\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|solutionrelative:sampleprojectposttitle\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\sampleprojectposttitle\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{D0A79E8B-B66B-4B67-9A35-DA3EFA47CAD1}|SampleProjectPostTitle\\SampleProjectPostTitle.csproj|solutionrelative:sampleprojectposttitle\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "SampleProjectPostTitle\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "SampleProjectPostTitle\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEwAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-11T11:40:10.443Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "SampleProjectPostTitle\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "SampleProjectPostTitle\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAcwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-11T11:37:14.352Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Detail.cshtml",
+              "DocumentMoniker": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Detail.cshtml",
+              "RelativeDocumentMoniker": "SampleProjectPostTitle\\Views\\Home\\Detail.cshtml",
+              "ToolTip": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Views\\Home\\Detail.cshtml",
+              "RelativeToolTip": "SampleProjectPostTitle\\Views\\Home\\Detail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-01-11T11:36:14.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "SampleProjectPostTitle\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\Training Classes 2023\\Asp.net MVC5\\.Net MVC Project\\SampleProjectPostTitle\\SampleProjectPostTitle\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "SampleProjectPostTitle\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAAFMAAAAAAAAAAAAvwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-01-11T11:36:01.226Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

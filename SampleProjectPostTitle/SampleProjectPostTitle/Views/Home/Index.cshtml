@@ -1,0 +1,122 @@
+﻿@model IEnumerable<SampleProjectPostTitle.Models.Posts>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-3">
+            <div class="col-5">
+
+                @{
+                    
+                    if (@TempData["successMessage"] != null)
+                    {
+                        <div class="alert-message">
+                            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                                <strong>@TempData["successMessage"]</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    }
+
+                    if (@TempData["updateMessage"] != null)
+                    {
+                        <div class="alert-message">
+                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
+                                <strong>@TempData["updateMessage"]</strong>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                            </div>
+                        </div>
+                    }
+                }
+                <form action="home/create" method="post" enctype="multipart/form-data">
+                    <h5>Post Upload</h5>
+                    <div class="input-text">
+                        <label class="form-label">Title</label>
+                        <input type="text" name="title" class="form-control mb-3" placeholder="Enter Post Title..." required />
+                    </div>
+
+                    <div class="input-text">
+                        <label class="form-label">Description</label>
+                        <textarea name="description" class="form-control" cols="30" rows="10" placeholder="Enter Post Description..."></textarea>
+                    </div>
+
+                    <div class="input-text">
+                        <label class="form-label">Image</label>
+                        <input type="file" name="image" class="form-control mb-3" required />
+                    </div>
+
+                    <div class="input-text">
+                        <label class="form-label">Location</label>
+                        <input type="text" name="location" class="form-control mb-3" placeholder="Enter Location..." required />
+                    </div>
+
+                    <div class="input-text">
+                        <label class="form-label">Price</label>
+                        <input type="number" name="price" class="form-control mb-3" placeholder="Enter Price..." required />
+                    </div>
+
+                    <div class="input-text">
+                        <label class="form-label">Rate</label>
+                        <input type="number" name="rate" class="form-control mb-3" placeholder="Enter Rate..." required />
+                    </div>
+
+                    <input type="submit" class="btn btn-danger" value="Register" />
+                </form>
+            </div>
+            <div class="col-7">
+                <div class="col-6 offset-6 mb-2">
+                    <form action="" method="post">
+                        <div class="row text-end">
+                            <input type="text" name="postSearchKey" class="col form-control" placeholder="Enter Search Post...">
+                            <button class="btn btn-danger col-2"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </div>
+                    </form>
+                </div>
+                <div class="data-container">
+                    <h5>Post List</h5>
+                    @foreach (var item in Model)
+                    {
+                        <div class="p-3 shadow-sm mb-4">
+                            <div class="row">
+                                <div class="col-7"><h5>@item.Title</h5></div>
+                                <div class="col-3 offset-2">@item.Created_Date.ToString("dd-MM-yyyy tt")</div>
+                            </div>
+
+
+
+                            <p class="text-muted">@(item.Description.Length < 200 ? item.Description : item.Description.Substring(0, item.Description.IndexOf(" ") + 200))...</p>
+                            <div class="mb-2">
+                                <span>
+                                    <small><i class="fa-solid fa-money-bill-1 text-success mx-2"></i>@item.Price kyats</small>
+                                </span> |
+                                <span>
+                                    <small><i class="fa-solid fa-location-dot text-danger mx-2"></i>@item.Location</small>
+                                </span> |
+                                <span>
+                                    <small><i class="fa-solid fa-star text-warning mx-2"></i>@item.Rate</small>
+                                </span>
+                            </div>
+                            <div class="text-end">
+                                <a href="home/delete?id=@item.ID" class="text-decoration-none"><button type="submit" class="btn btn-danger"><i class="fa-solid fa-trash px-1"></i>Delete</button></a>
+                                <a href="home/detail?id=@item.ID" class="text-decoration-none"><button type="submit" class="btn btn-primary"><i class="fa-solid fa-file-lines px-1"></i>See Details</button></a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</html>
